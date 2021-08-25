@@ -16,4 +16,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
+
+    public void saveEmployee(final Employee employee) {
+        employeeRepository.save(employee);
+    }
 }
